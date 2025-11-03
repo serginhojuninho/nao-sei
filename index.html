@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Período Menstrual</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Calculadora de Período Menstrual</h1>
+        </header>
+
+        <div class="form">
+            <label for="inicio">Data do Início do Último Período:</label>
+            <input type="date" id="inicio" name="inicio">
+            
+            <label for="ciclo">Duração Média do Ciclo (dias):</label>
+            <input type="number" id="ciclo" name="ciclo" min="21" max="35">
+
+            <button id="calcular">Calcular Próximo Período</button>
+        </div>
+
+        <div class="result">
+            <h2>Próximo Período:</h2>
+            <p id="resultado"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
